@@ -1,3 +1,5 @@
+import { useDebounce } from "../lib/hooks";
+
 type ResultsCountProps = {
   totalNumberOfResults: number;
 };
