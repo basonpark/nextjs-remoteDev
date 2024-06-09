@@ -1,12 +1,8 @@
-import { useDebounce } from "../lib/hooks";
+import { useJobItemsContext } from "../lib/hooks";
 
-type ResultsCountProps = {
-  totalNumberOfResults: number;
-};
+export default function ResultsCount() {
+  const { totalNumberOfResults } = useJobItemsContext();
 
-export default function ResultsCount({
-  totalNumberOfResults,
-}: ResultsCountProps) {
   return (
     <p className="count">
       <span className="u-bold">{totalNumberOfResults}</span> results

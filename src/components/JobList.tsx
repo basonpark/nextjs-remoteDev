@@ -1,7 +1,7 @@
 import JobListItem from "./JobListItem";
 import Spinner from "./Spinner";
+import { useActiveId, useJobItemsContext } from "../lib/hooks";
 import { JobItem } from "../lib/types";
-import { useActiveId } from "../lib/hooks";
 
 type JobListProps = {
   jobItems: JobItem[];
